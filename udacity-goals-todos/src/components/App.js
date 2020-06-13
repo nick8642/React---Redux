@@ -1,9 +1,11 @@
-import React from 'react';
+import React from 'react'
 import ConnectedTodos from './Todos'
 import ConnectedGoals from './Goals'
 import { connect } from 'react-redux'
-import {handleInitialData} from '../actions/shared'
- 
+import {
+  handleInitialData
+} from '../actions/shared'
+
 class App extends React.Component {
   componentDidMount () {
     const { dispatch } = this.props
